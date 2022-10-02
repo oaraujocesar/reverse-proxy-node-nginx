@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="theme-color" content="#000000")
+    title Docker - Full Cycle
+  body
+    main
+      h1 #{title}
+      form(action="/people" method="post")
+        label(for="name") Type your name: 
+        input(data-json=`data: true` type="text" name="name" id="name")
+        button(type="submit") Register
