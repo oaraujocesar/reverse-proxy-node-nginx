@@ -24,6 +24,7 @@ services:
     command: ["node", "index.js"]
     volumes:
       - ./node:/usr/src/app
+      - /usr/src/app/node_modules/
     tty: true
     depends_on:
       - db
